@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalogue | PPT Library</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">📊 PPT Library</div>
+    <div class="nav-links">
+      <a href="index.html">Upload</a>
+      <a href="library.html" class="active">Catalogue</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>PPT Catalogue</h1>
+    <p class="subtitle">Browse, search and download uploaded presentations.</p>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search by title, tag, category or author...">
+      <select id="filterCategory">
+        <option value="">All Categories</option>
+        <option value="Business">Business</option>
+        <option value="Education">Education</option>
+        <option value="Technology">Technology</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Finance">Finance</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div id="cardGrid" class="card-grid"></div>
+    <p id="emptyMsg" class="empty-msg" style="display:none;">No presentations found. Upload one first.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
